@@ -5,21 +5,21 @@
 class GnText < Formula
   desc "Terminal-based GeekNews reader for Korean tech news"
   homepage "https://github.com/sappho192/gn-text"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sappho192/gn-text/releases/download/v0.1.2/gn-text_0.1.2_darwin_amd64.tar.gz"
-      sha256 "f180892ba419c948d2f61cc74902e816332dc9574e7232fd7f99804a95c15993"
+      url "https://github.com/sappho192/gn-text/releases/download/v0.1.3/gn-text_0.1.3_darwin_amd64.tar.gz"
+      sha256 "61d92f061651d9178e7e66f4b61deeb169b479a8a3e44165add2140aef5745eb"
 
       def install
         bin.install "gn-text"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sappho192/gn-text/releases/download/v0.1.2/gn-text_0.1.2_darwin_arm64.tar.gz"
-      sha256 "9aea8e48ddb51304d99052dbd12ea13eb8d2e1d299072cd470e02fbfc244bbdf"
+      url "https://github.com/sappho192/gn-text/releases/download/v0.1.3/gn-text_0.1.3_darwin_arm64.tar.gz"
+      sha256 "d2c31ed1f505ddff99350a968ebf192661bd959894746efd9df4647e7333eab1"
 
       def install
         bin.install "gn-text"
@@ -29,15 +29,15 @@ class GnText < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sappho192/gn-text/releases/download/v0.1.2/gn-text_0.1.2_linux_amd64.tar.gz"
-      sha256 "615faa5c1bbf94c2098230c41368caed6a61861a438382c3dc13a7f6c8253e64"
+      url "https://github.com/sappho192/gn-text/releases/download/v0.1.3/gn-text_0.1.3_linux_amd64.tar.gz"
+      sha256 "7e6eb6edd709951d313ec151560148fd8660d0deb36a96ac66e2c7b28ab3921f"
       def install
         bin.install "gn-text"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sappho192/gn-text/releases/download/v0.1.2/gn-text_0.1.2_linux_arm64.tar.gz"
-      sha256 "d12b5ad71a9d723c0fb166f21ca59ed02ff4d8af119e8a5bb38fff1108d2efc3"
+      url "https://github.com/sappho192/gn-text/releases/download/v0.1.3/gn-text_0.1.3_linux_arm64.tar.gz"
+      sha256 "1fef64d19872c4fa7bcd8179282ec3a7041efdc1ce737180355abc1921c9a9b6"
       def install
         bin.install "gn-text"
       end
