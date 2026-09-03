@@ -5,23 +5,23 @@
 class GnText < Formula
   desc "Terminal-based GeekNews reader for Korean tech news"
   homepage "https://github.com/sappho192/gn-text"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sappho192/gn-text/releases/download/v0.1.3/gn-text_0.1.3_darwin_amd64.tar.gz"
-      sha256 "61d92f061651d9178e7e66f4b61deeb169b479a8a3e44165add2140aef5745eb"
+      url "https://github.com/sappho192/gn-text/releases/download/v0.1.4/gn-text_0.1.4_darwin_amd64.tar.gz"
+      sha256 "908353f58e926cd15a2e4bc52b0c636c35ddd3241f77a1cc6753c8874ce6c1d1"
 
-      def install
+      define_method(:install) do
         bin.install "gn-text"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sappho192/gn-text/releases/download/v0.1.3/gn-text_0.1.3_darwin_arm64.tar.gz"
-      sha256 "d2c31ed1f505ddff99350a968ebf192661bd959894746efd9df4647e7333eab1"
+      url "https://github.com/sappho192/gn-text/releases/download/v0.1.4/gn-text_0.1.4_darwin_arm64.tar.gz"
+      sha256 "dae895a56d242981523f2dfea985dcfda508557b121bc6f51e2ad328f48f2c50"
 
-      def install
+      define_method(:install) do
         bin.install "gn-text"
       end
     end
@@ -29,16 +29,16 @@ class GnText < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sappho192/gn-text/releases/download/v0.1.3/gn-text_0.1.3_linux_amd64.tar.gz"
-      sha256 "7e6eb6edd709951d313ec151560148fd8660d0deb36a96ac66e2c7b28ab3921f"
-      def install
+      url "https://github.com/sappho192/gn-text/releases/download/v0.1.4/gn-text_0.1.4_linux_amd64.tar.gz"
+      sha256 "d221fcf011c46b52797c3f29ba39ee5d18a0884e4e242efc3e9378d5c1d8744f"
+      define_method(:install) do
         bin.install "gn-text"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sappho192/gn-text/releases/download/v0.1.3/gn-text_0.1.3_linux_arm64.tar.gz"
-      sha256 "1fef64d19872c4fa7bcd8179282ec3a7041efdc1ce737180355abc1921c9a9b6"
-      def install
+      url "https://github.com/sappho192/gn-text/releases/download/v0.1.4/gn-text_0.1.4_linux_arm64.tar.gz"
+      sha256 "77f2a4609bbb05feeaf4512bb1f54bd2340e74549b609a3bd72ee8b6758b0039"
+      define_method(:install) do
         bin.install "gn-text"
       end
     end
